@@ -1126,7 +1126,7 @@ webpackJsonp([15178676390636814000],{
 	    pages = newPages;
 	    var pathPrefix = "";
 	    if (true) {
-	      pathPrefix = ("/blog");
+	      pathPrefix = (undefined);
 	    }
 	    findPage = (0, _findPage2.default)(newPages, pathPrefix);
 	  },
@@ -1652,7 +1652,7 @@ webpackJsonp([15178676390636814000],{
 	
 	var pathPrefix = "/";
 	if (true) {
-	  pathPrefix = ("/blog") + "/";
+	  pathPrefix = (undefined) + "/";
 	}
 	
 	if ("serviceWorker" in navigator) {
