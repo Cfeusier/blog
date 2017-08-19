@@ -6,7 +6,7 @@ const headerStyle = {
   backgroundColor: 'grey',
   width: '100%',
   height: 40,
-  padding: '10'
+  padding: '10px'
 };
 
 class Header extends Component {
