@@ -5,3 +5,7 @@
     align-items: center;
     max-width: 100%;
 }
+
+.user-links > a {
+  margin: 0 10px;
+}

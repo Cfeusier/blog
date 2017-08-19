@@ -5,7 +5,7 @@ import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
+import config from "../../config/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 
@@ -30,6 +30,13 @@ export default class PostTemplate extends React.Component {
           <h1>
             {post.title}
           </h1>
+          {
+            !!post.cover && !!post.cover.length ?
+              <div style={{ 'text-align': 'center' }}>
+                <img src={post.cover} style={{ width: '100%', height: 250 }} />
+              </div>
+            : null
+          }
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <div className="post-meta">
             <PostTags tags={post.tags} />

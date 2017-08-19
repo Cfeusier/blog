@@ -6,9 +6,12 @@ class UserLinks extends Component {
     const { userLinks } = this.props.config;
     const { labeled } = this.props;
     return userLinks.map(link =>
-      <button key={link.label} href={link.url}>
+      <a key={link.label}
+        href={link.url}
+        target={link.label === "Contact" ? "_self" : "_blank"}
+        rel="noopener">
         {labeled ? link.label : ""}
-      </button>
+      </a>
     );
   }
   render() {
